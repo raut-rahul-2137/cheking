@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Web Page in a Small Window</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    .back-button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    .back-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Open Flipkart in a Small Window</h1>
+
+  <!-- Button to Open Flipkart in a Small Window -->
+  <button class="back-button" onclick="openSmallWindow()">Open Flipkart</button>
+
+  <!-- Back Button -->
+  <button class="back-button" onclick="window.history.back()">Back</button>
+
+  <script>
+    function openSmallWindow() {
+      // Open a new window with the Flipkart website at a smaller size
+      window.open("https://www.flipkart.com", "FlipkartWindow", "width=800,height=600");
+    }
+  </script>
+
+</body>
+</html>
